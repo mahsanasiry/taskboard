@@ -1,50 +1,46 @@
-# Taskboard: a Kanban board in React and TypeScript
+# Taskboard
 
-A fast Kanban task board with three columns (To do, In progress, Done).
-Built with **Next.js 14**, **TypeScript** and **Tailwind CSS**, exported as a static site.
-No backend and no extra libraries: tasks are saved in the browser with `localStorage`.
+> A simple and responsive Kanban board for organizing tasks.
+
+Taskboard is a responsive Kanban-style task manager built with React and TypeScript. It provides a simple interface for creating, organizing and tracking tasks across different stages.
+
+🌐 **Live Demo:** https://mahsanasiry.github.io/taskboard/
 
 ## Features
 
-- Add, edit and delete tasks (title, details, priority, due date)
-- Drag and drop between columns and reorder inside a column (native HTML5 drag and drop)
-- "Move to" menu on every card for phones and keyboard users
-- Search and priority filter
-- Overdue dates highlighted, progress bar for finished tasks
-- Saved automatically in the browser
-- Accessible: native `<dialog>` for the task form, ARIA labels, live announcements, visible focus
+- Create, edit and delete tasks
+- Organize tasks across Kanban columns
+- Native drag-and-drop interactions
+- Filter tasks by status
+- Search tasks
+- Persistent browser data
+- Responsive layout
+- Accessible controls and interactions
+- Clean and reusable UI components
 
-## Run locally
+## Tech Stack
 
-```bash
-npm install
-npm run dev
-```
+- React
+- TypeScript
+- Tailwind CSS
+- HTML5 Drag and Drop API
+- GitHub Actions
+- GitHub Pages
 
-Open http://localhost:3000.
+## Project Highlights
 
-## Build
+Taskboard was built as a practical front-end project with a focus on:
 
-```bash
-npm run build
-```
+- Type-safe development with TypeScript
+- Component-based architecture
+- Native browser APIs
+- Client-side state management
+- Responsive design
+- Accessible interactions
+- Persistent browser storage
+- Clean and maintainable code
+- Static deployment with GitHub Actions
 
-The static site is created in the `out` folder.
+## Source Code
 
-## Deploy to GitHub Pages
-
-1. Push this repository to GitHub.
-2. Go to **Settings > Pages** and set **Source** to **GitHub Actions**.
-3. Every push to `main` runs `.github/workflows/deploy.yml` and publishes the site at
-   `https://mahsanasiry.github.io/taskboard/`.
-
-## Project structure
-
-```
-src/
-  app/          layout, page, global styles
-  components/   Board, Column, TaskCard, TaskDialog
-  lib/
-    types.ts    types and constants (columns, priorities)
-    board.ts    reducer (all state changes), saving and loading, helpers
-```
+https://github.com/mahsanasiry/taskboard
